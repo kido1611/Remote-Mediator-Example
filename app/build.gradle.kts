@@ -60,6 +60,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}")
     implementation("androidx.activity:activity-compose:${Versions.activityCompose}")
 
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.24.7-alpha")
+
     // Paging
     implementation(Dependencies.Paging.pagingRuntime)
     implementation(Dependencies.Paging.pagingCompose)
