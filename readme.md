@@ -1,4 +1,4 @@
-Remote Mediator Exmaple
+Remote Mediator Example
 ---
 A simple Android application for trying Paging 3 - Remote Mediator.This application created with using TMDB as an API. Edit API key in app\tmdb.properties.
 
