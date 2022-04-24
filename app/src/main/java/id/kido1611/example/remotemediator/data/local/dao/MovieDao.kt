@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import id.kido1611.example.remotemediator.data.local.model.MovieEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface MovieDao {
@@ -21,4 +22,7 @@ interface MovieDao {
 
     @Query("select * from movies order by id asc")
     fun getPagingMovie() : PagingSource<Int, MovieEntity>
+
+    @Query("select * from movies order by id asc limit :limit")
+    fun getFlowMovies(limit: Int): Flow<List<MovieEntity>>
 }

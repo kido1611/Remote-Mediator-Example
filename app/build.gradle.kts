@@ -68,6 +68,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}")
     implementation("androidx.activity:activity-compose:${Versions.activityCompose}")
 
+    implementation("androidx.navigation:navigation-compose:${Versions.navigationCompose}")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     implementation("com.google.accompanist:accompanist-swiperefresh:0.24.7-alpha")

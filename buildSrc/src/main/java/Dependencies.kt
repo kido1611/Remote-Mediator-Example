@@ -8,6 +8,7 @@ object Versions {
     const val okhttp = "4.9.1"
     const val retrofit = "2.9.0"
     const val room = "2.4.1"
+    const val navigationCompose = "2.4.2"
 }
 
 object Dependencies {

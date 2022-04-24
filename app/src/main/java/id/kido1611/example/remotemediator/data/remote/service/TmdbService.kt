@@ -13,6 +13,12 @@ interface TmdbService {
         @Query("api_key") api_key: String
     ) : ApiResult<Movie>
 
+    @GET("movie/popular")
+    suspend fun popularMovie(
+        @Query("page") page: Int,
+        @Query("api_key") api_key: String
+    ) : ApiResult<Movie>
+
     @GET("search/movie")
     suspend fun searchMovie(
         @Query("query") query: Int,

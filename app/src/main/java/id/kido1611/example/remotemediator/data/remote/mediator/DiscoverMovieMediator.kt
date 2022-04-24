@@ -66,7 +66,6 @@ class DiscoverMovieMediator(
             database.withTransaction {
                 if(loadType == LoadType.REFRESH) {
                     movieDao.clearMovies()
-                    remoteKeyDao.clearKeys()
                 }
 
                 val nextPage = if(result.results.isEmpty()) {
